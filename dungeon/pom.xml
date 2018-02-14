@@ -52,7 +52,7 @@
       <configuration>
       <archive>
         <manifest>
-        <mainClass>fil.coo.App</mainClass>
+        <mainClass>fil.coo.Main</mainClass>
         </manifest>
       </archive>
       </configuration>
