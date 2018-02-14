@@ -5,8 +5,10 @@ package fil.coo.rooms;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import fil.coo.entities.Monster;
+import fil.coo.items.Item;
 
 /**
  * @author abassi_youva
@@ -14,7 +16,13 @@ import fil.coo.entities.Monster;
  */
 public class Room {
 	
-	List monsters = new ArrayList<Monster>();
-	//List items = new ArrayList<>();
+	protected List<Monster> monsters;
+	protected List<Item> items;
+	protected Map<Directions, Room> neighbors;
+	
+	public Room() {
+		
+	}
 
+	
 }

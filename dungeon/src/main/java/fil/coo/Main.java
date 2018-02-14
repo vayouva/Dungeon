@@ -1,8 +1,8 @@
 package fil.coo;
 
 
-import fil.coo.entities.Monster;
 import fil.coo.entities.Player;
+import fil.coo.items.LifePotion;
 
 /**
  * Hello world!
@@ -13,13 +13,10 @@ public class Main
     public static void main( String[] args )
     {
         Player pla = new Player(5, 15, 5);
-        Monster mon = new Monster(10, 10, 5, "bouteflika");
+        LifePotion lp = new LifePotion(5);
         
-        pla.attack(mon);
-        System.out.println("The player attacked " + mon.getName());
-        System.out.println("The remaining life of the monster: " + mon.getLife());
-        System.out.println("The monster is attacking the player..");
-        mon.attack(pla);
-        System.out.println("The remaining life of the player: " + pla.getLife());
+        System.out.println("player's amount of life before the potion : " + pla.getLife());
+        lp.isUsedBy(pla);
+        System.out.println("player's amount of life after the potion : " + pla.getLife());
     }
 }
