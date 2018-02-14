@@ -8,7 +8,7 @@ package fil.coo.rooms;
  * The directions that could be taken by the player
  */
 
-public enum Directions {
+public enum Direction {
 	NORTH, SOUTH, EAST, WEST;
 	
 }
