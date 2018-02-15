@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
 
+import fil.coo.AdventureGame;
 import fil.coo.entities.Player;
 import fil.coo.listchooser.ListChooser;
 import fil.coo.rooms.Direction;
@@ -19,8 +20,18 @@ import fil.coo.rooms.Room;
 public class MoveAction implements Action {
 	
 	private Room room;
+	private AdventureGame ag;
 	
-	public MoveAction() {
+	public MoveAction(Room room) {
+		this.room = room;
+	}
+	
+	public MoveAction(Room room, AdventureGame ag) {
+		this.room = room;
+		this.ag = ag;
+	}
+	
+	public void isMadeBy(Player pl) {
 		
 		ListChooser lc = new ListChooser();
 		List<Direction> possibleDir = new ArrayList<Direction>();
@@ -32,17 +43,17 @@ public class MoveAction implements Action {
 			
 			Direction choice = lc.choose("Which direction ? ", possibleDir);
 			Room chosenRoom = this.room.getNeighbor(choice);
-			//Must continue here
+			ag.setCurrentRoom(chosenRoom);
+			ag.refreshAllPossibleActions(chosenRoom);
 		}
-	}
-	
-	public void isMadeBy(Player pl) {
-		
 		
 	}
 
 	public boolean isPossible() {
-		return this.room.getMonsters().isEmpty();
+		if(this.room.getMonsters().isEmpty() && !this.room.getNeighbors().isEmpty())
+			return true;
+		
+		return false;
 	}
 
 	public String getDescription() {

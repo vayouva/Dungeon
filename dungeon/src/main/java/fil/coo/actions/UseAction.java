@@ -23,8 +23,12 @@ public class UseAction implements Action {
 		
 	}
 	
+	public UseAction(Room room) {
+		this.room = room;
+	}
+
 	public void isMadeBy(Player pl) {
-		if(isPossible() == true) {
+		if(isPossible()) {
 			List <Item> items = new ArrayList<Item>();
 			items = this.room.getItems();
 			if(items.size() == 1) {

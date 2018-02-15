@@ -21,7 +21,7 @@ public class AttackAction implements Action {
 	}
 	
 	public void isMadeBy(Player pl) {
-		if(isPossible() == true) {
+		if(isPossible()) {
 			Monster monster = null;
 			
 			if(this.room.getMonsters().size() == 1) {
