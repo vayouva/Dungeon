@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fil.coo.actions.Action;
-import fil.coo.listchooser.ListChooser;
+import fil.coo.items.ListChooser;
 
 /**
  * @author abassi_youva

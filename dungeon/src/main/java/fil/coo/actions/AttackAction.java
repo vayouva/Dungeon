@@ -5,7 +5,7 @@ package fil.coo.actions;
 
 import fil.coo.entities.Monster;
 import fil.coo.entities.Player;
-import fil.coo.listchooser.ListChooser;
+import fil.coo.items.ListChooser;
 import fil.coo.rooms.Room;
 
 /**

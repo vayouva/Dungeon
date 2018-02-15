@@ -8,7 +8,7 @@ import java.util.List;
 
 import fil.coo.entities.Player;
 import fil.coo.items.Item;
-import fil.coo.listchooser.ListChooser;
+import fil.coo.items.ListChooser;
 import fil.coo.rooms.Room;
 
 /**

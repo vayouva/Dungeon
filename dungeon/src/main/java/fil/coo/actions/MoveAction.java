@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 
 import fil.coo.AdventureGame;
 import fil.coo.entities.Player;
-import fil.coo.listchooser.ListChooser;
+import fil.coo.items.ListChooser;
 import fil.coo.rooms.Direction;
 import fil.coo.rooms.Room;
 

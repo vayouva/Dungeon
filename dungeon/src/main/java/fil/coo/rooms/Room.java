@@ -45,6 +45,14 @@ public class Room {
 		this.neighbors = new HashMap<Direction, Room>();
 	}
 
+	public Room(Item item) {
+		this.monsters = new ArrayList<Monster>();
+		this.items=new ArrayList<Item>();
+		this.items.add(item);
+		this.neighbors = new HashMap<Direction,Room>();
+		
+	}
+	
 	/**
 	 * Remove a monster from the list of this room's monsters 
 	 * @param monster the monster to remove from the list

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package fil.coo.listchooser;
+package fil.coo.items;
 
 import java.util.List;
 
