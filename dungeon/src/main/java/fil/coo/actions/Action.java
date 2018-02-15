@@ -13,7 +13,7 @@ public interface Action {
 	
 	public void isMadeBy(Player pl);
 	
-	public boolean isPossible(Player pl);
+	public boolean isPossible();
 	
 	public String getDescription();
 }

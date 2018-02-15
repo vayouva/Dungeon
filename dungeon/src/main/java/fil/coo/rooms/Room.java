@@ -112,7 +112,7 @@ public class Room {
 	}
 	
 	/**
-	 * return a map of neighbors
+	 * return a map of neighbors by their direction and room
 	 * @return the neighbors to return 
 	 */
 	public Map<Direction, Room> getNeighbors() {

@@ -16,7 +16,7 @@ public class LookAction implements Action {
 		
 	}
 
-	public boolean isPossible(Player pl) {
+	public boolean isPossible() {
 		// TODO Auto-generated method stub
 		return false;
 	}

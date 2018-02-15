@@ -25,6 +25,4 @@ public class StrengthPotion implements Item {
 		return "strength potion";
 	}
 	
-	
-
 }
