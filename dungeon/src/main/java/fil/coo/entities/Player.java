@@ -41,7 +41,7 @@ public class Player extends GameCharacter {
 	
 	public Action chooseAction() {
 		ListChooser lc = new ListChooser();
-		Action chosenAction = lc.choose("Which action ? ", this.actions);
+		Action chosenAction = lc.choose("Which action ? ", actions);
 		
 		return chosenAction;	
 	}

@@ -54,5 +54,9 @@ public class UseAction implements Action {
 	public String getDescription() {
 		return "use";
 	}
+	
+	public String toString() {
+		return "use";
+	}
 
 }

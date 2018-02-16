@@ -29,7 +29,7 @@ public class AttackAction implements Action {
 			}
 			else {
 				ListChooser lc = new ListChooser();
-				monster = lc.choose("Which monster ? ", this.room.getMonsters());
+				monster = lc.choose("Which monster ? ", room.getMonsters());
 			}
 			
 			monster.chageLife(monster.getLife() - pl.getStrength());
@@ -57,4 +57,7 @@ public class AttackAction implements Action {
 		return "attack";
 	}
 
+	public String toString() {
+		return "attack";
+	}
 }

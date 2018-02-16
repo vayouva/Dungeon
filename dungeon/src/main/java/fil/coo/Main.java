@@ -22,7 +22,7 @@ public class Main {
     		System.out.println("Let's begin...");
 		
     		//Setting the player 
-    		Player pl = new Player(20, 5, 5);
+    		Player pl = new Player(10, 5, 5);
     		
     		//Setting the adventure game and the different items
     		AdventureGame ag = new AdventureGame(pl);
@@ -34,11 +34,11 @@ public class Main {
     		//Setting the monsters
     		Monster monster_easy = new Monster(3, 5, 2, "viscous toad");
     		Monster monster_easy2 = new Monster(3, 5, 2, "viscous toad");
-    		Monster monster_mid = new Monster(4, 7, 3, "lizard with knife");
-    		Monster monster_mid2 = new Monster(4, 7, 3, "lizard with knife");
-    		Monster monster_mid3 = new Monster(4, 7, 3, "lizard with knife");
-    		Monster monster_hard = new Monster(8, 10, 4, "giant spider");
-    		Monster monster_hard2 = new Monster(8, 10, 4, "giant spider");
+    		Monster monster_mid = new Monster(10, 7, 3, "lizard with knife");
+    		Monster monster_mid2 = new Monster(10, 7, 3, "lizard with knife");
+    		Monster monster_mid3 = new Monster(15, 7, 3, "lizard with knife");
+    		Monster monster_hard = new Monster(17, 10, 4, "giant spider");
+    		Monster monster_hard2 = new Monster(25, 10, 4, "giant spider");
     		Monster monster_insane = new Monster(30, 30, 4, "Bouteflikus, the evil");
     		
     		//Setting the rooms
@@ -46,8 +46,8 @@ public class Main {
     		Room room2 = new Room(monster_easy, lifePotion);
     		Room room3 = new Room(monster_mid, lifePotion);
     		Room room4 = new Room(monster_easy2, strengthPotion);
-    		Room room5 = new Room(monster_mid2, strengthPotion);
-    		Room room6 = new Room(monster_hard, lifePotion);
+    		Room room5 = new Room(monster_mid2, goldPurse);
+    		Room room6 = new Room(monster_hard, goldPurse);
     		Room room7 = new Room(monster_mid3, goldPurse);
     		Room room8 = new Exit(monster_insane, lifePotion);
     		Room room9 = new Room(bandito);

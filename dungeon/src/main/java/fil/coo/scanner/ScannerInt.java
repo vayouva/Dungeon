@@ -23,7 +23,7 @@ public class ScannerInt {
 		int input = -1;
 		
 		while(input < 1 || input >= n) {
-			System.out.println(message + " (1-" + (n-1) + ") ?");
+			System.out.println(message + " (1-" + (n-1) + ") ? ");
 			
 			try {
 				input = sc.nextInt();

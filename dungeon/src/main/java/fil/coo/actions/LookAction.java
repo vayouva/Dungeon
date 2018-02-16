@@ -71,4 +71,7 @@ public class LookAction implements Action {
 		return "look";
 	}
 
+	public String toString() {
+		return "look";
+	}
 }

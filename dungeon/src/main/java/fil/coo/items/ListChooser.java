@@ -13,9 +13,6 @@ import fil.coo.scanner.ScannerInt;
  */
 public class ListChooser {
 
-	public ListChooser() {
-		
-	}
 	
 	public <T> T choose(String question, List<T> list) {
 		

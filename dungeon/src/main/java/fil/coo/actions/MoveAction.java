@@ -60,4 +60,7 @@ public class MoveAction implements Action {
 		return "move";
 	}
 
+	public String toString() {
+		return "move";
+	}
 }
