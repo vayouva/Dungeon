@@ -5,7 +5,7 @@ package fil.coo.entities;
 
 /**
  * @author abassi_youva
- *
+ * The GameCharacter represents a character, whatever it is a monster or a player 
  */
 public class GameCharacter {
 

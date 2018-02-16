@@ -5,21 +5,30 @@ package fil.coo.actions;
 
 import fil.coo.entities.Monster;
 import fil.coo.entities.Player;
-import fil.coo.items.ListChooser;
+import fil.coo.listchooser.ListChooser;
 import fil.coo.rooms.Room;
 
 /**
  * @author abassi_youva
- *
+ * The AttackAction allows the player to attack a monster
  */
 public class AttackAction implements Action {
 
 	private Room room;
 	
+	/**
+	 * Makes an AttackAction with a specified room
+	 * @param room the player's current room
+	 */
 	public AttackAction(Room room) {
 		this.room = room;
 	}
 	
+	/**
+	 * Checks if the action is possible, if so the player can attack the monster
+	 * at the end of the battle, this method removes the monster from the current room
+	 * @param pl the player who plays the game
+	 */
 	public void isMadeBy(Player pl) {
 		if(isPossible()) {
 			Monster monster = null;
@@ -49,6 +58,10 @@ public class AttackAction implements Action {
 		}
 	}
 
+	/**
+	 * Return true if the room's list of monsters isn't empty
+	 * @return true if the room's list of monsters isn't empty
+	 */
 	public boolean isPossible() {
 		return !this.room.getMonsters().isEmpty();
 	}

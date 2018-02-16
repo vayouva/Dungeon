@@ -11,15 +11,16 @@ import fil.coo.items.Item;
  *
  */
 public class Exit extends Room {
-
 	
-	
+	/**
+	 * Makes an exit (final) room
+	 * @param monster the monster to set in the room
+	 * @param item the item to set in the room
+	 */
 	public Exit(Monster monster, Item item) {
 		super(monster, item);
 	}
 
-	public boolean isExit() {
-		return true;
-	}
+	
 
 }

@@ -18,6 +18,13 @@ public class ScannerInt {
 		
 	}
 	
+	/**
+	 * read an integer from 0 (included) to n (excluded) from standard input
+	 * input is repeated as long as it is not correct
+	 * @param message a message
+	 * @param n the upper (excluded) bound for input
+	 * @return the valid read input
+	 */
 	public static int readInt(String message, int n) {
 		
 		int input = -1;

@@ -24,7 +24,7 @@ public class Room {
 	
 
 	/**
-	 * Builds a room with a monsters and an item
+	 * Makes a room with a monsters and an item
 	 * @param monster the monster to set
 	 * @param item the item to set
 	 */
@@ -37,14 +37,9 @@ public class Room {
 	}
 	
 	/**
-	 * Creates a room without parameters 
+	 * Makes a room with a specified item on it
+	 * @param item the item to set in the room
 	 */
-	public Room() {
-		this.monsters = new ArrayList<Monster>();
-		this.items = new ArrayList<Item>();
-		this.neighbors = new HashMap<Direction, Room>();
-	}
-
 	public Room(Item item) {
 		this.monsters = new ArrayList<Monster>();
 		this.items=new ArrayList<Item>();

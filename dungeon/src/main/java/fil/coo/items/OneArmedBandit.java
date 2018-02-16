@@ -9,7 +9,7 @@ import fil.coo.entities.Player;
 
 /**
  * @author abassi_youva
- *
+ * OneArmedBandit represents an armed bandit 
  */
 public class OneArmedBandit implements Item {
 
@@ -19,7 +19,10 @@ public class OneArmedBandit implements Item {
 		
 	}
 	
-	
+	/**
+	 * The player pays the armed bandit, then he picks an item randomly for the player
+	 * @param pl the player who deals with the armed bandit
+	 */
 	public void isUsedBy(Player pl) {
 		if(pl.getGold() >= BANDIT_PRICE) {
 			
@@ -40,7 +43,7 @@ public class OneArmedBandit implements Item {
 			
 			Random random = new Random();
 			int choice;
-			choice = random.nextInt(3);
+			choice = random.nextInt(3) + 1;
 			
 			switch(choice) {
 				case 1:

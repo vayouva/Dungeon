@@ -9,13 +9,13 @@ import java.util.Map.Entry;
 
 import fil.coo.AdventureGame;
 import fil.coo.entities.Player;
-import fil.coo.items.ListChooser;
+import fil.coo.listchooser.ListChooser;
 import fil.coo.rooms.Direction;
 import fil.coo.rooms.Room;
 
 /**
  * @author abassi_youva
- *
+ * The MoveAction class allows the player to move to another room 
  */
 public class MoveAction implements Action {
 	
@@ -31,6 +31,11 @@ public class MoveAction implements Action {
 		this.ag = ag;
 	}
 	
+	/**
+	 * Displays the different directions available in the current room 
+	 * The player enters a direction and if the move is possible, the player goes to the specified room
+	 * @param pl the player who plays the game
+	 */
 	public void isMadeBy(Player pl) {
 		
 		ListChooser lc = new ListChooser();
@@ -49,6 +54,10 @@ public class MoveAction implements Action {
 		
 	}
 
+	/**
+	 * The player can change the room if all the monsters are dead, and the current room has neighbors
+	 * @return if the current room's list of monsters is empty and it has neighbors
+	 */
 	public boolean isPossible() {
 		if(this.room.getMonsters().isEmpty() && !this.room.getNeighbors().isEmpty())
 			return true;
