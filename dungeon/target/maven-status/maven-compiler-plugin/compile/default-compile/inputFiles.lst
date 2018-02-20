@@ -14,7 +14,8 @@
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/actions/MoveAction.java
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/items/LifePotion.java
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/rooms/Direction.java
-/Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/items/ListChooser.java
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/entities/Player.java
+/Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/listchooser/ListChooser.java
+/Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/items/GetRest.java
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/actions/AttackAction.java
 /Users/youva/Desktop/java/dungeon/dungeon/src/main/java/fil/coo/actions/Action.java

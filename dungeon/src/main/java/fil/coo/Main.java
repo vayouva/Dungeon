@@ -3,6 +3,7 @@ package fil.coo;
 
 import fil.coo.entities.Monster;
 import fil.coo.entities.Player;
+import fil.coo.items.GetRest;
 import fil.coo.items.GoldPurse;
 import fil.coo.items.LifePotion;
 import fil.coo.items.OneArmedBandit;
@@ -30,6 +31,7 @@ public class Main {
     		StrengthPotion strengthPotion = new StrengthPotion(5);
     		GoldPurse goldPurse = new GoldPurse(5);
     		OneArmedBandit bandito = new OneArmedBandit();
+    		GetRest rest = new GetRest(10, 5);
     		
     		//Setting the monsters
     		Monster monster_easy = new Monster(3, 5, 2, "viscous toad");
@@ -42,7 +44,7 @@ public class Main {
     		Monster monster_insane = new Monster(10, 40, 10, "Bouteflikus, the evil");
     		
     		//Setting the rooms
-    		Room room1 = new Room(bandito);
+    		Room room1 = new Room(rest);
     		Room room2 = new Room(monster_easy, lifePotion);
     		Room room3 = new Room(monster_mid, lifePotion);
     		Room room4 = new Room(monster_easy2, strengthPotion);
